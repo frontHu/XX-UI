@@ -771,7 +771,23 @@
     eslint "^4.19.1"
     eslint-plugin-vue "^4.7.1"
 
-"@vue/cli-service@^3.8.0":
+"@vue/cli-service-global@^3.8.3":
+  version "3.8.3"
+  resolved "https://registry.npm.taobao.org/@vue/cli-service-global/download/@vue/cli-service-global-3.8.3.tgz#3176559543278aca448d091b14a28c207dde5e39"
+  dependencies:
+    "@vue/babel-preset-app" "^3.8.0"
+    "@vue/cli-plugin-babel" "^3.8.0"
+    "@vue/cli-plugin-eslint" "^3.8.0"
+    "@vue/cli-service" "^3.8.3"
+    babel-eslint "^10.0.1"
+    chalk "^2.4.2"
+    eslint "^4.19.1"
+    eslint-plugin-vue "^4.7.1"
+    resolve "^1.10.0"
+    vue "^2.6.10"
+    vue-template-compiler "^2.6.10"
+
+"@vue/cli-service@^3.8.0", "@vue/cli-service@^3.8.3":
   version "3.8.3"
   resolved "https://registry.npm.taobao.org/@vue/cli-service/download/@vue/cli-service-3.8.3.tgz#aac15c880220532497916ce091e2d9194086be5b"
   dependencies:
