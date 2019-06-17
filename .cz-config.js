@@ -1,16 +1,15 @@
 module.exports = {
-  // types,
   types: [
     {
       value: ':sparkles: feat',
       name: '✨ 增加新功能'
     },
     {
-      value: ':fix',
-      name: '🐛'
+      value: ':bug: fix',
+      name: '🐛 修复bug'
     },
     {
-      value: '',
+      value: ':pencil: docs',
       name: '📝 修改文档(仅文档更改)'
     },
     {

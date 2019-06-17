@@ -42,6 +42,6 @@ module.exports = {
       'x-invalid-end-tag': false
     }],
 
-    'vue/no-side-effects-in-computed-properties' : 'off'
+    'vue/no-side-effects-in-computed-properties': 'off'
   }
 }
