@@ -1,7 +1,7 @@
 module.exports = {
   types: [
     {
-      value: ':sparkles:',
+      value: ':sparkles: feat',
       name: '✨ 增加新功能'
     },
     {
@@ -64,27 +64,12 @@ module.exports = {
     { name: 'core' },
     { name: 'upgrade' }
   ],
-
-  // it needs to match the value for field type. Eg.: 'fix'
-
-  // scopeOverrides: {
-  // fix: [
-  // { name: 'merge' },
-  // { name: 'style' },
-  // { name: 'e2eTest' },
-  // { name: 'unitTest' },
-  // ],
-  // },
   scopeOverrides: {
     ':wrench: docs': [{ name: ':wrench: docs' }, { name: ':bulb: docs_code' }]
   },
-
-  // override the messages, defaults are as follows
   messages: {
     type: '选择更改类型:',
     scope: '\n更改的范围:',
-    // 如果allowcustomscopes为true，则使用
-    // customScope: 'Denote the SCOPE of this change:',
     subject: '简短描述:\n',
     body: '详细描述. 使用"|"换行:\n',
     breaking: 'Breaking Changes列表:\n',
