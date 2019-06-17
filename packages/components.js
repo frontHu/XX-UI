@@ -6,5 +6,5 @@ import Button from './components/button';
 
 export default [
   // Layout,
-  Button,
+  Button
 ];
