@@ -1,6 +1,6 @@
 {
   "name": "xx-ui",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,14 +8,15 @@
     "lint": "vue-cli-service lint",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "release": "standard-version"
   },
   "config": {
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     },
     "cz-customizable": {
-      "config":  "./.cz-config.js"
+      "config": "./.cz-config.js"
     }
   },
   "dependencies": {
