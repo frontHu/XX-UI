@@ -6,8 +6,8 @@ module.exports = {
       name: '✨ 增加新功能'
     },
     {
-      value: ':bug: fix',
-      name: '🐛 修复bug'
+      value: ':fix',
+      name: '🐛'
     },
     {
       value: '',
