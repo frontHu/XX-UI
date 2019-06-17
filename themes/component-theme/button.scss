@@ -35,7 +35,7 @@ $btn-active-shade-percent: 10%;
   }
 }
 
-.at-btn {
+.xx-btn {
   display: inline-block;
   padding: $btn-padding-base;
   font-size: 0;
@@ -158,16 +158,16 @@ $btn-active-shade-percent: 10%;
     font-size: $btn-font-size-md;
     padding: $btn-padding-md;
 
-    &.at-btn--circle {
+    &.xx-btn--circle {
       width: $btn-circle-size-lg;
       height: $btn-circle-size-lg;
 
-      .at-btn__icon {
+      .xx-btn__icon {
         font-size: $btn-font-size-lg;
       }
     }
 
-    .at-btn__text {
+    .xx-btn__text {
       font-size: $btn-font-size-md;
     }
   }
@@ -176,16 +176,16 @@ $btn-active-shade-percent: 10%;
     font-size: $btn-font-size-sm;
     padding: $btn-padding-sm;
 
-    &.at-btn--circle {
+    &.xx-btn--circle {
       width: $btn-circle-size-sm;
       height: $btn-circle-size-sm;
 
-      .at-btn__icon {
+      .xx-btn__icon {
         font-size: $btn-font-size-sm;
       }
     }
 
-    .at-btn__text {
+    .xx-btn__text {
       font-size: $btn-font-size-sm;
     }
   }
@@ -194,16 +194,16 @@ $btn-active-shade-percent: 10%;
     font-size: $btn-font-size-smer;
     padding: $btn-padding-smer;
 
-    &.at-btn--circle {
+    &.xx-btn--circle {
       width: $btn-circle-size-smer;
       height: $btn-circle-size-smer;
 
-      .at-btn__icon {
+      .xx-btn__icon {
         font-size: $btn-font-size-smer;
       }
     }
 
-    .at-btn__text {
+    .xx-btn__text {
       font-size: $btn-font-size-smer;
     }
   }
@@ -214,7 +214,7 @@ $btn-active-shade-percent: 10%;
     padding: 0;
     border-radius: 50%;
 
-    .at-btn__icon {
+    .xx-btn__icon {
       font-size: 14px;
     }
   }
@@ -241,11 +241,11 @@ $btn-active-shade-percent: 10%;
   }
 }
 
-.at-btn-group {
+.xx-btn-group {
   font-size: 0;
   display: inline-block;
 
-  .at-btn {
+  .xx-btn {
     border-radius: 0;
 
     &:not(:last-child) {

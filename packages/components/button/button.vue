@@ -7,6 +7,6 @@
 
 <script>
 export default {
-  name: 'XButton'
+  name: 'XxButton'
 }
 </script>
