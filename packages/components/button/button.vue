@@ -7,8 +7,12 @@
       disabled ? `xx-btn-disabled` : '',
       hollow ? `xx-btn-${type}-hollow` : '',
     ]"
+    :disabled="disabled"
   >
-    <slot></slot>
+    <i
+      class="iconfont loading"
+    >&#xe62b;</i>
+    <span><slot></slot></span>
   </button>
 </template>
 
@@ -29,6 +33,10 @@ export default {
       default: false
     },
     hollow: {
+      type: Boolean,
+      default: false
+    },
+    loading: {
       type: Boolean,
       default: false
     }

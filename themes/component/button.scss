@@ -2,12 +2,12 @@
   @return mix(#FFF, $color, $percent);
 }
 
-@mixin btn-status($borderColor, $bgColor) {
-  border: 1px solid $borderColor;
-  background-color: $bgColor;
+@mixin btn-status($border-color, $bg-color) {
+  border: 1px solid $border-color;
+  background-color: $bg-color;
 
   &:hover {
-    background-color: tint($bgColor, 20%);
+    background-color: tint($bg-color, 20%);
   }
 }
 
@@ -39,6 +39,18 @@
   background-color: $btn-bg-normal;
   padding: $btn-padding-base;
 
+  &-default {
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:active {
+      background-color:transparent;
+    }
+  }
+
   &-primary,
   &-success,
   &-warn,
@@ -46,19 +58,8 @@
     color: $color-white;
   }
 
-  &-default {
-    &:hover {
-      border-color: $color-primary;
-      color: $color-primary;
-    }
-  }
-
   &-primary {
     @include btn-status($color-primary, $color-primary);
-
-    &:hover {
-      border: 1px solid $color-primary;
-    }
 
     &-hollow {
       @include btn-hollow-status($color-primary);
@@ -68,10 +69,6 @@
   &-success {
     @include btn-status($color-success, $color-success);
 
-    &:hover {
-      border: 1px solid $color-success;
-    }
-
     &-hollow {
       @include btn-hollow-status($color-success);
     }
@@ -79,10 +76,6 @@
 
   &-warn {
     @include btn-status($color-warn, $color-warn);
-
-    &:hover {
-      border: 1px solid $color-warn;
-    }
 
     &-hollow {
       @include btn-hollow-status($color-warn);
@@ -92,10 +85,6 @@
   &-error {
     @include btn-status($color-error, $color-error);
 
-    &:hover {
-      border: 1px solid $color-error;
-    }
-
     &-hollow {
       @include btn-hollow-status($color-error);
     }
@@ -103,9 +92,15 @@
 
   &-text {
     border: none;
-
+  
     &:hover {
       color: $color-primary;
+    }
+
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:active {
+      background: none;
     }
   }
 

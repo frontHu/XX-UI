@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    normal:
     <xx-button>default</xx-button>
     <xx-button
       type="primary"
@@ -24,11 +25,11 @@
       disable
     </xx-button>
     <hr>
+    hollow:
     <xx-button>default</xx-button>
     <xx-button
       type="primary"
       hollow
-      disabled
     >
       primary
     </xx-button>
@@ -53,12 +54,11 @@
     <xx-button
       type="text"
       disabled
-    >
+    > 
       text
     </xx-button>
     <xx-button
       disabled
-      hollow
     >
       disable
     </xx-button>
