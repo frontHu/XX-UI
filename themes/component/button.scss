@@ -1,0 +1,124 @@
+@function tint($color, $percent) {
+  @return mix(#FFF, $color, $percent);
+}
+
+@mixin btn-status($borderColor, $bgColor) {
+  border: 1px solid $borderColor;
+  background-color: $bgColor;
+
+  &:hover {
+    background-color: tint($bgColor, 20%);
+  }
+}
+
+@mixin btn-hollow-status($color) {
+  border: 1px solid $color;
+  background-color: $color-white;
+  color: $color;
+
+  &:hover {
+    background-color: tint($color, 20%);
+    color: $color-white;
+  }
+}
+
+.xx-btn {
+  display: inline-block;
+  outline: 0;
+  text-align: center;
+  white-space: nowrap;
+  transition: 0.2s;
+  user-select: none;
+  cursor: pointer;
+  margin-left: 8px;
+  background-color: $color-white;
+  color: $font-color-default;
+  font-size: $font-size-14;
+  border: 1px solid $btn-border-normal-color;
+  border-radius: $btn-border-radius;
+  background-color: $btn-bg-normal;
+  padding: $btn-padding-base;
+
+  &-primary,
+  &-success,
+  &-warn,
+  &-error {
+    color: $color-white;
+  }
+
+  &-default {
+    &:hover {
+      border-color: $color-primary;
+      color: $color-primary;
+    }
+  }
+
+  &-primary {
+    @include btn-status($color-primary, $color-primary);
+
+    &:hover {
+      border: 1px solid $color-primary;
+    }
+
+    &-hollow {
+      @include btn-hollow-status($color-primary);
+    }
+  }
+
+  &-success {
+    @include btn-status($color-success, $color-success);
+
+    &:hover {
+      border: 1px solid $color-success;
+    }
+
+    &-hollow {
+      @include btn-hollow-status($color-success);
+    }
+  }
+
+  &-warn {
+    @include btn-status($color-warn, $color-warn);
+
+    &:hover {
+      border: 1px solid $color-warn;
+    }
+
+    &-hollow {
+      @include btn-hollow-status($color-warn);
+    }
+  }
+
+  &-error {
+    @include btn-status($color-error, $color-error);
+
+    &:hover {
+      border: 1px solid $color-error;
+    }
+
+    &-hollow {
+      @include btn-hollow-status($color-error);
+    }
+  }
+
+  &-text {
+    border: none;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    color: $color-disabled;
+    border-color: $btn-border-disable-color;
+    background-color: $btn-bg-disabled;
+
+    &:hover {
+      color: $color-disabled;
+      border-color: $btn-border-disable-color;
+      background-color: $btn-bg-disabled;
+    }
+  }
+}

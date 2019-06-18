@@ -1,6 +1,7 @@
-import Vue from 'vue'
-import App from './App.vue'
-import XxUi from './../packages/loacl'
+import Vue from 'vue';
+import App from './App.vue';
+import XxUi from './../packages/loacl';
+import './../themes/index.scss';
 
 Vue.use(XxUi)
 Vue.config.productionTip = false
