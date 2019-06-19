@@ -6,6 +6,7 @@
       size ? `xx-btn-${size}` : '',
       disabled ? `xx-btn-disabled` : '',
       hollow ? `xx-btn-${type}-hollow` : '',
+      circle && !$slots.default ? 'xx-btn-circle' : ''
     ]"
     :disabled="disabled"
     @click="btnclick"
@@ -19,7 +20,9 @@
       class="iconfont xx-btn__icon"
       :class="`icon-${icon}`"
     ></i>
-    <span v-if="$slots.default"><slot></slot></span>
+    <span v-if="$slots.default">
+      <slot></slot>
+    </span>
   </button>
 </template>
 
@@ -50,10 +53,14 @@ export default {
     icon: {
       type: String,
       default: ''
+    },
+    circle: {
+      type: Boolean,
+      default: false
     }
   },
   methods: {
-    btnclick: (ev) => {
+    btnclick: function(ev) {
       this.$emit('click', ev);
     }
   }

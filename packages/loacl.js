@@ -4,8 +4,6 @@ import components from './components';
 
 const install = function (Vue) {
   if (install.installed) return; // 判断是否安装
-  console.log(install, 'install')
-  console.log(components, 'components')
   components.map(component => Vue.component(component.name, component)); // 遍历注册全局组件
 }
 

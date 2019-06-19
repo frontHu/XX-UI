@@ -77,6 +77,103 @@
     </xx-button>
     <xx-button icon="earth">
     </xx-button>
+    <hr>
+    Cirle:
+    <xx-button
+      circle
+      icon="earth"
+    >
+    </xx-button>
+    <xx-button
+      circle
+      hollow
+      icon="earth"
+    >
+    </xx-button>
+    <xx-button
+      circle
+      hollow
+      icon="earth"
+      type="error"
+    >
+    </xx-button>
+    <xx-button
+      circle
+      icon="earth"
+      type="success"
+    >
+    </xx-button>
+    <xx-button
+      circle
+      icon="earth"
+      type="warn"
+    >
+      circle
+    </xx-button>
+    <hr>
+    Size:
+    <xx-button size="smaller">
+      smaller
+    </xx-button>
+    <xx-button size="small">
+      small
+    </xx-button>
+    <xx-button>
+      base
+    </xx-button>
+    <xx-button size="large">
+      base
+    </xx-button>
+    <br>
+    Size: 
+    <xx-button
+      size="smaller"
+      circle
+    >
+      smaller
+    </xx-button>
+    <xx-button
+      size="small"
+      circle
+    >
+      small
+    </xx-button>
+    <xx-button
+      circle
+    >
+      base
+    </xx-button>
+    <xx-button
+      size="large"
+      circle
+    >
+      base
+    </xx-button>
+    <br>
+    Size Icon:
+    <xx-button
+      size="smaller"
+      circle
+      icon="earth"
+    >
+    </xx-button>
+    <xx-button
+      size="small"
+      circle
+      icon="earth"
+    >
+    </xx-button>
+    <xx-button
+      circle
+      icon="earth"
+    >
+    </xx-button>
+    <xx-button
+      size="large"
+      circle
+      icon="earth"
+    >
+    </xx-button>
   </div>
 </template>
 

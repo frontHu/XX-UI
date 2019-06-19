@@ -117,6 +117,49 @@
     }
   }
 
+  &-smaller {
+    padding: $btn-padding-smer;
+    &.xx-btn-circle {
+      width: $btn-circle-size-smer;
+      height: $btn-circle-size-smer;
+
+      .xx-btn__icon {
+        font-size: $btn-font-size-smer;
+      }
+    }
+  }
+
+  &-small {
+    padding: $btn-padding-sm;
+    &.xx-btn-circle {
+      width: $btn-circle-size-sm;
+      height: $btn-circle-size-sm;
+
+      .xx-btn__icon {
+        font-size: $btn-font-size-sm;
+      }
+    }
+  }
+
+  &-large {
+    padding: $btn-padding-lg;
+    &.xx-btn-circle {
+      width: $btn-circle-size-lg;
+      height: $btn-circle-size-lg;
+
+      .xx-btn__icon {
+        font-size: $btn-font-size-lg;
+      }
+    }
+  }
+
+  &-circle {
+    width: $btn-circle-size;
+    height: $btn-circle-size;
+    border-radius: 50%;
+    padding: 0;
+  }
+
   &__icon {
     display: inline-block;
     font-size: $font-size-14;
