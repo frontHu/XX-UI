@@ -8,11 +8,18 @@
       hollow ? `xx-btn-${type}-hollow` : '',
     ]"
     :disabled="disabled"
+    @click="btnclick"
   >
     <i
-      class="iconfont loading"
-    >&#xe62b;</i>
-    <span><slot></slot></span>
+      v-if="loading"
+      class="iconfont icon-sync xx-btn__icon xx-btn__loading"
+    ></i>
+    <i 
+      v-if="icon"
+      class="iconfont xx-btn__icon"
+      :class="`icon-${icon}`"
+    ></i>
+    <span v-if="$slots.default"><slot></slot></span>
   </button>
 </template>
 
@@ -39,6 +46,15 @@ export default {
     loading: {
       type: Boolean,
       default: false
+    },
+    icon: {
+      type: String,
+      default: ''
+    }
+  },
+  methods: {
+    btnclick: (ev) => {
+      this.$emit('click', ev);
     }
   }
 }

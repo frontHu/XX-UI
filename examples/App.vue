@@ -62,6 +62,21 @@
     >
       disable
     </xx-button>
+    <hr>
+    Loading:
+    <xx-button
+      loading
+      disabled
+    >
+      Loading
+    </xx-button>
+    <hr>
+    Icon:
+    <xx-button icon="earth">
+      Icon
+    </xx-button>
+    <xx-button icon="earth">
+    </xx-button>
   </div>
 </template>
 

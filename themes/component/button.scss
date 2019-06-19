@@ -116,4 +116,16 @@
       background-color: $btn-bg-disabled;
     }
   }
+
+  &__icon {
+    display: inline-block;
+    font-size: $font-size-14;
+    & + span {
+      margin-left: 4px;
+    }
+  }
+  
+  &__loading {
+    animation: loadingCircle 1s linear infinite;
+  }
 }
