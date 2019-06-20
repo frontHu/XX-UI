@@ -12,24 +12,22 @@
    dest: '.vuepress/dist', //指定 vuepress build 的输出目录, default: .vuepress/dist
    ga: '', //提供 Google AnalyticsID 来开启集成
    serviceWorker: false, //如果设置为 true，VuePress 将自动生成并注册一个 service worker ，这个 worker 将内容缓存以供离线使用（仅在生产环境中启用）
-   theme: '', //指定此选项来使用自定义主题。使用 “foo” 的值，VuePress 将尝试在 node_modules/vuepress-theme-foo/Layout.vue 加载主题组件
+  //  theme: '', //指定此选项来使用自定义主题。使用 “foo” 的值，VuePress 将尝试在 node_modules/vuepress-theme-foo/Layout.vue 加载主题组件
    themeConfig: { //为使用的主题提供配置选项。这些选项将根据你使用的主题而有所不同。
     nav: [
-      {text: 'Home', link: '/'}
     ],
-    sidebar: [
-      {
-        title: '指南',
-        collapsable: false
-      },
-      {
-        title: '综述',
-        children: [
-          '/markdown/sidebar/',
-          '/markdown/sidebar/side'
-        ]
-      }
-    ]
+    sidebar: {
+      '/views/': [
+        {
+          title: '介绍',
+          collapsable: false,
+          children: [
+            'introduce',
+            'install'
+          ]
+        }
+      ]
+    }
    },
    configureWebpack: { //配置webpack
 
