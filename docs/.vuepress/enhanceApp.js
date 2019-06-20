@@ -3,6 +3,7 @@
  */
 import Vue from 'vue';
 import XXUI from './../../packages/loacl'
+import './../../themes/index.scss'
 
 export default ({
   Vue, // the version of Vue being used in the VuePress app

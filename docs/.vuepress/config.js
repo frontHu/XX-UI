@@ -25,6 +25,13 @@
             'introduce',
             'install'
           ]
+        },
+        {
+          title: '组件',
+          collapsable: false,
+          children: [
+            'button'
+          ]
         }
       ]
     }
