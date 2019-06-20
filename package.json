@@ -19,6 +19,7 @@
       "config": "./.cz-config.js"
     }
   },
+  "husky":{"hooks":{"commit-msg":"commitlint -e $GIT_PARAMS"}},
   "dependencies": {
     "@vue/cli-service-global": "^3.8.3",
     "commitizen": "^3.1.1",
