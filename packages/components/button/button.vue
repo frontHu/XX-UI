@@ -6,7 +6,8 @@
       size ? `xx-btn-${size}` : '',
       disabled ? `xx-btn-disabled` : '',
       hollow ? `xx-btn-${type}-hollow` : '',
-      circle && !$slots.default ? 'xx-btn-circle' : ''
+      circle && !$slots.default ? 'xx-btn-circle' : '',
+      circle && $slots.default ? '' : ''
     ]"
     :disabled="disabled"
     @click="btnclick"
