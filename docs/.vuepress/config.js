@@ -30,7 +30,8 @@
           title: '组件',
           collapsable: false,
           children: [
-            'button'
+            'button',
+            'tag',
           ]
         }
       ]

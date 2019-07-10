@@ -1,0 +1,62 @@
+@mixin tag-status($status, $color) {
+  &--#{$status} {
+    background-color: tint($color, 80%);
+    color: $color;
+    border: 1px solid $color;
+    .xx-tag__close {
+      color: $color;
+      &:hover {
+        background-color: $color;
+        color: #fff;
+      }
+    }
+  }
+} 
+
+.xx-tag {
+  display: inline-block;
+  padding: 1px 8px;
+  font-size: $font-size-14;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  outline: 0;
+  color: #3f536e;
+  background-color: #f7f7f7;
+  margin-left: 10px;
+  .xx-tag__close {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 8px;
+    border-radius: 50%;
+    padding: 1px;
+    color: #3f536e;
+    &:hover {
+      background-color: #3f536e;
+      color: #fff;
+    }
+  }
+  &--disabled{
+    background-color: tint($color-disabled, 80%);
+    color:  $color-disabled;
+    border: 1px solid $color-disabled;
+    .xx-tag__close {
+      color: $color-disabled;
+      &:hover {
+        cursor: not-allowed;
+        color: $color-disabled;
+        background-color: transparent;
+      }
+    }
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+  
+  @include tag-status('success', $color-success);
+  @include tag-status('warn', $color-warn);
+  @include tag-status('error', $color-error);
+  @include tag-status('primary', $color-primary);
+  @include tag-status('info', $color-info);
+}

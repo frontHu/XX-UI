@@ -3,8 +3,10 @@
  */
 // import Layout from './components/layout'; 
 import Button from './components/button';  
+import Tag from './components/tag'
 
-export default [
+export default [ 
   // Layout,
-  Button
+  Button,
+  Tag
 ];

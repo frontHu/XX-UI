@@ -174,6 +174,16 @@
       icon="earth"
     >
     </xx-button>
+    <hr>
+    <xx-tag></xx-tag>
+    <xx-tag color="success">
+      good
+    </xx-tag>
+    <xx-tag color="warn"></xx-tag>
+    <xx-tag color="primary"></xx-tag>
+    <xx-tag color="info"></xx-tag>
+    <xx-tag color="error"></xx-tag>
+    <xx-tag color="disabled"></xx-tag>
   </div>
 </template>
 
